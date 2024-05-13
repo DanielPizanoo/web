@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AboutMe</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">DHP</p>
+            <nav>
+                <a href="#hero">Inicio</a>
+                <a href="#somos-proya">Sobre mí</a>
+                <a href="#nuestros-programas">Portafolio</a>
+                <a href="#caracteristicas">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>👋 Hola! Soy Daniel.</h1>
+        <a download href="https://drive.google.com/uc?id=16S3gHHy_HTTpQCgc1wlv2Tchgir2Qcs3&export=download">
+            <button type="button" class="download-cv">Descargar CV</button>
+        </a>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div>
+                <h2>Hola, soy <span class="color-acento">Daniel Hernández Pizano</span></h2>
+                <p>Soy Ingeniero en Informática y cuento con una Maestría en Sistemas Computacionales. No me gusta definirme por el trabajo que he hecho, me defino por el trabajo que quiero hacer. Considero que las habilidades se pueden aprender, la personalidad de cada persona es lo importante. 
+                    Me gusta seguir aprendiendo cosas nuevas, a desafiarme a mí mismo y hacer cosas que marquen una diferencia. Suelo aprender las cosas rápido y capaz de adquirir nuevas habilidades con la práctica. Me considero un espíritu apasionado, expresivo, aventurero y que jamás se rinde. 
+                    Soy una persona bien organizada, que le gusta solucionar problemas, dando alta atención al detalle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Portafolio</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Algoritmo para dosificación de alimento ©</h3><br>
+                    <p>Sistema para el cálculo de ración de alimento durante el ciclo de cultivo, en base al tiempo y los parámetros de calidad del agua, y la programación de rutas de alimentación a través del estanque. 
+                    </p>
+                    <button type="button" data-toggle="modal" data-target="#dosificacionModal">+ Info</button>
+
+                    <div class="modal fade" id="dosificacionModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 style="color: black;">Algoritmo para dosificación de alimento ©</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p style="color: black; text-align: justify;">Proyecto de maestría que se basa en la creación de un algoritmo de dosificación, que utiliza el tiempo transcurrido del cultivo y los parámetros principales de calidad del agua, proporcionando la ración de alimento a dispersar 
+                                en base a la edad del espécimen.</p>
+                                <p style="color: black; text-align: justify;">A través del calculo de dosificación, el algoritmo crea una ruta de dosificación de alimento, tomando medidas anteriormente programadas del estanque donde se encuentran los animales, dependiendo su tiempo de vida.</p>
+                                <p style="color: black; text-align: justify;">Herramientas: <br> ➤ MATLAB. <br> ➤ Simulink. <br> ➤ Overleaf.</p>
+                                <!-- Carousel -->
+                                <div id="carouselDosificacionModal" class="carousel slide" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="./media/proyectos/dosificacion/parametrosCalidadAgua.png" class="d-block w-100" alt="Parametros de calidad de agua al medir">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./media/proyectos/dosificacion/diagramaFlujoTrayectoria.png" class="d-block w-100" alt="Diagrama de flujo para desarrollar una
+                                      trayectoria a través de una ecuación paramétrica">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/dosificacion/checkpointsTrayectoria.png" class="d-block w-100" alt="Trayectoria por checkpoints y la suavización de ella.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/dosificacion/trayectoriaControlador.png" class="d-block w-100" alt="Trayectoria trazada por el controlador.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/dosificacion/trayectoriaDispositivo.png" class="d-block w-100" alt="Trayectoria trazada por el dispositivo de pruebas.">
+                                    </div>
+                                    <!-- Add more carousel items as needed -->
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselDosificacionModal" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselDosificacionModal" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <h3>Sistema de Control Financiero</h3><br><br>
+                    <p>Módulo de gastos para un sistema de control financiero para granjas acuícolas de camarón. Enlazado al sistema de monitoreo, que permite la generación de documentos de entrada, el cual registra una nota, ticket o factura de las compra realizadas.
+                    </p>
+                    <button type="button" data-toggle="modal" data-target="#controlFinancieroModal">+ Info</button>
+
+                    <div class="modal fade" id="controlFinancieroModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 style="color: black;">Sistema de Control Financiero</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p style="color: black; text-align: justify;">Proyecto de residencia de la ingeniería en informática, se realizó la creación de un módulo de gastos enlazado a un sistema de control financiero para granjas acuícolas. 
+                                    En este se creó una vista para la generación de documentos de entrada, en el cual registra una nota, ticket o factura de las compras realizadas durante el ciclo de cultivo.</p>
+                                <p style="color: black; text-align: justify;">Por otro lado, el usuario puede generar reportes de los gastos realizados, especificando las fechas iniciales y finales del ciclo al cual quiere realizar un reporte.</p>
+                                <p style="color: black; text-align: justify;">Herramientas: <br> ➤ HTML5. <br> ➤ PHP. <br> ➤ CSS. <br> ➤ CodeIgniter. <br> ➤ JavaScript.</p>
+                                <!-- Carousel -->
+                                <div id="carouselControlFinancieroModal" class="carousel slide" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="./media/proyectos/controlFinanciero/Login.jpg" class="d-block w-100" alt="Inicio de sesión del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./media/proyectos/controlFinanciero/paginaPrincipal.png" class="d-block w-100" alt="Pagina principal del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlFinanciero/docEntrada.png" class="d-block w-100" alt="Sección de documentos de entrada.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlFinanciero/addMovimiento.png" class="d-block w-100" alt="Interfaz agregar movimiento.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlFinanciero/pruebaEntrada.png" class="d-block w-100" alt="Ejemplo de documentos de entrada.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlFinanciero/reportes.png" class="d-block w-100" alt="Menu para sección de reportes.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlFinanciero/creacionReportes.png" class="d-block w-100" alt="Pantalla para creación de reportes.">
+                                    </div>
+                                    <!-- Add more carousel items as needed -->
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselControlFinancieroModal" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselControlFinancieroModal" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <h3>Módulo de Control Administrativo</h3><br><br>
+                    <p>Sistema informático con características web, que realiza procesos automatizados en la institución académica, implementado las tecnologías de información para los agilizar los procesos que se solicitan y mejorar el rendimiento a las peticiones realizadas al comité académico.</p>
+                    <button type="button" data-toggle="modal" data-target="#controlAdministrativoModal">+ Info</button>
+
+                    <div class="modal fade" id="controlAdministrativoModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 style="color: black;">Módulo de Control Administrativo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p style="color: black; text-align: justify;">Se creo un sistema que digitaliza el formato de solicitud al comité, esto con la finalidad del agilizar el proceso, evitar pérdidas de información, y llevar un control de los estudiantes que han realizado peticiones al comité académico.</p>
+                                <p style="color: black; text-align: justify;">En este sistema interfieren tres cuatro usuarios, el alumno que realiza la solicitud, los maestros que forman parte del comité, el jefe de comité y el director del instituto el cual tiene la última respuesta.</p>
+                                <p style="color: black; text-align: justify;">Herramientas: <br> ➤ HTML5. <br> ➤ PHP. <br> ➤ CSS. <br> ➤ JavaScript.</p>
+                                <!-- Carousel -->
+                                <div id="carouselControlAdministrativoModal" class="carousel slide" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="./media/proyectos/controlAdministrativo/login.png" class="d-block w-100" alt="Inicio de sesión del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./media/proyectos/controlAdministrativo/index.png" class="d-block w-100" alt="Pagina principal del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlAdministrativo/pantallaOpciones.png" class="d-block w-100" alt="Pantalla de opciones sobre solicitud a comité.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlAdministrativo/solicitudaComite.png" class="d-block w-100" alt="Interfaz de solicitud a comité.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlAdministrativo/verRespuestas.png" class="d-block w-100" alt="Ver status de las solicitudes a comité.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlAdministrativo/sesionDireccion.png" class="d-block w-100" alt="Sesion por parte de direccion del instituto.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/controlAdministrativo/verSolicitudesDireccion.png" class="d-block w-100" alt="Pantalla de solicitudes que llegaron a direccion para ultima confirmacion.">
+                                    </div>
+                                    <!-- Add more carousel items as needed -->
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselControlAdministrativoModal" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselControlAdministrativoModal" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="programas2">
+                <div class="carta2">
+                    <h3>Sistema de Control de Gastos</h3><br><br>
+                    <p>Aplicación multiplataforma para dispositivos móviles para un sistema de control financiero para granjas acuícolas de camarón. Enlazado al sistema de monitoreo, registrando entradas y salidas durante la producción y ciclo de cultivo.</p>
+                    <button type="button" data-toggle="modal" data-target="#controlGastosModal">+ Info</button>
+
+                    <div class="modal fade" id="controlGastosModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 style="color: black;">Sistema de Control de Gastos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p style="color: black; text-align: justify;">Se creo una aplicación multiplataforma para dispositivos móviles, a través de la plataforma Xamarin.</p>
+                                <p style="color: black; text-align: justify;">Este sistema permite el control financiero para granjas acuícolas, el cual estará enlazado al sistema de monitore, registrando gastos y categorías de compras, que se utilizan durante la producción del cultivo.</p>
+                                <p style="color: black; text-align: justify;">Herramientas: <br> ➤ C#. <br> ➤ Xamarin. <br> ➤ .Net. <br> ➤ PHP.</p>
+                                <!-- Carousel -->
+                                <div id="carouselControlGastosModal" class="carousel slide" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="./media/proyectos/simticaf/login.png" class="d-block w-100" alt="Login del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./media/proyectos/simticaf/menu.png" class="d-block w-100" alt="Pagina principal del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/simticaf/registrarMovimiento.png" class="d-block w-100" alt="Pantalla de ingreso de un movimiento nuevo, incluyendo los campos a registrar.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/simticaf/categorias.png" class="d-block w-100" alt="Pantalla para registrar categorias nuevas o editar anteriores.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/simticaf/movimientos.png" class="d-block w-100" alt="Ver status de las solicitudes a comité.">
+                                    </div>
+                                    <!-- Add more carousel items as needed -->
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselControlGastosModal" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselControlGastosModal" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="carta2">
+                    <h3>Contratación de Personal Institutriz</h3><br>
+                    <p>Pagina Web para realizar la contratación del servicio de niñeras, el cual permite la visualización de sus datos personales, precios, habilidades y requisitos de contratación.</p>
+                    <button type="button" data-toggle="modal" data-target="#institutrizModal">+ Info</button>
+
+                    <div class="modal fade" id="institutrizModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 style="color: black;">Contratación de Personal Institutriz</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p style="color: black; text-align: justify;">Se creo una pagina web para contratar el servicio de niñeras, mostrando un catalogo de jovenes capaces de proporcionar el servicio de cuidado infantil.</p>
+                                <p style="color: black; text-align: justify;">En este sistema interfieren ambos lados del servicio, las personas se pueden registrar para hacer solicitudes del servicio. Y por otro lado, las jovenes se pueden registrar, enviando su documentacion escencial para empezar a recibir solicitudes.</p>
+                                <p style="color: black; text-align: justify;">Herramientas: <br> ➤ HTML5. <br> ➤ PHP. <br> ➤ CSS. <br> ➤ JavaScript.</p>
+                                <!-- Carousel -->
+                                <div id="carouselinstitutrizModal" class="carousel slide" data-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="./media/proyectos/contratacionInstitutriz/inicio.png" class="d-block w-100" alt="Inicio de sesión del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./media/proyectos/contratacionInstitutriz/servicios.png" class="d-block w-100" alt="Pagina principal del sistema.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/contratacionInstitutriz/buscoTrabajo.png" class="d-block w-100" alt="Pantalla de registro para empleadas nuevas.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/contratacionInstitutriz/buscoAsistente.png" class="d-block w-100" alt="Pantalla de registro para usuarios nuevos.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/contratacionInstitutriz/login.png" class="d-block w-100" alt="Login para iniciar sesion.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/contratacionInstitutriz/solicitarServicio.png" class="d-block w-100" alt="Pantalla para realizar una solicitud de servicio.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./media/proyectos/contratacionInstitutriz/completarRegistro.png" class="d-block w-100" alt="Pantalla para completar el registro de empleadas nuevas.">
+                                    </div>
+                                    <!-- Add more carousel items as needed -->
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselinstitutrizModal" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselinstitutrizModal" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="carta2">
+                    <h3>Sistema de catálogo de libros</Fh3><br><br>
+                    <p>Sistema informático con características web, en el cual se emplea un CRUD que permita realizar operaciones con la información almacenada. Esto permite crear, leer, actualizar y eliminar los libros ingresados durante la operación.</p>
+                    <button type="button" data-toggle="modal" data-target="#cataloLibrosModal">+ Info</button>
+
+                    <div class="modal fade" id="cataloLibrosModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 style="color: black;">Sistema de Control de Gastos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p style="color: black; text-align: justify;">Sistema CRUD que simula el prestamo de libros de una biblioteca. Permitiendo agregar, ver, eliminar y actualizar los libros que se esten registrando.
+                                <p style="color: black; text-align: justify;">Herramientas: <br> ➤ Python. <br> ➤ Electron. <br> ➤ Flask. <br> ➤ JavaScript.
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="redes">
+          <div class="red">
+            <a data-toggle="modal" data-target="#enviarCorreoModal">
+              <img src="./media/correo.png">
+            </a>
+
+            <div class="modal fade" id="enviarCorreoModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 style="color: black;">Correo</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="post" action="send.php" name="contacto" id="contacto">
+                        <li><input type="text" placeholder="Nombre" name="nombre" id="nombre" maxlength="100" autocomplete="off"></li>
+                        <li></label><input type="text" placeholder="Correo" name="email" id="email" autocomplete="off"></li>
+                        <li></label><textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea></li>
+
+                        <li><button type="submit">Enviar mensaje</button></li>
+                      </form>
+                      <a href="mailto:danielhp74@gmail.com" id="trucazo">mail</a>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+          <div class="red">
+            <a href="https://api.whatsapp.com/send?phone=523121031746" target="_blank">
+              <img src="./media/whatsapp.png">
+            </a>
+          </div>
+          <div class="red">
+            <a href="https://www.linkedin.com/in/daniel-hern%C3%A1ndez-pizano-b65214187/" target="_blank">
+              <img src="./media/linkedin.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="sfc3546y5l3nhn19dw68x6ddsbdw45nybq3"></div><script type="text/javascript" src="https://counter4.optistats.ovh/private/counter.js?c=3546y5l3nhn19dw68x6ddsbdw45nybq3&down=async" async></script><br><a href="https://www.contadorvisitasgratis.com">contador de visitas</a><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter4.optistats.ovh/private/contadorvisitasgratis.php?c=3546y5l3nhn19dw68x6ddsbdw45nybq3" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+
+    <footer>
+        <div class="container">
+            <p>&copy; MSC. Daniel Hernández Pizano</p>
+        </div>
+    </footer>
+
+    <script>
+        const $form = document.querySelector('#contacto')
+        const $buttonMailto = document.querySelector('#trucazo')
+
+        $form.addEventListener('submit', handleSubmit)
+
+        function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            console.log(form.get('nombre'))
+            $buttonMailto.setAttribute('href', `mailto:danielhp74@gmail.com?subject=nombre ${form.get('nombre')} correo ${form.get('email')}&body=${form.get('mensaje')}`)
+            $buttonMailto.click()
+        }
+
+        $('#dosificacionModal').on('shown.bs.modal', function () {
+            $('#carouselExample').carousel({
+            interval: 2000 // Set the interval for sliding images
+            });
+        });
+    </script>
+</body>
+
+</html>
